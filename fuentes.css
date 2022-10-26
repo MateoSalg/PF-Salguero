@@ -1,0 +1,11 @@
+@font-face {
+    font-family: GothamBlackRegular;
+    src:url(fonts/Gotham\ Black\ Regular.ttf);
+}
+
+.navbar-brand {
+    font-family: GothamBlackRegular;
+    color: white;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+
+}
