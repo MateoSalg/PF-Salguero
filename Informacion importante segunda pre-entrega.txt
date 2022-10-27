@@ -1,0 +1,4 @@
+-Utilize un archivo css donde tuve que cargar la fuente que va a utilizar la empresa a la cual estoy desarrollando la web.
+-El carrousel se creo desde 0, acoplando imagenes e animaciones.
+-Voy a ir modificando la pagina web y de igual manera los mockups.
+

@@ -1,7 +1,0 @@
-- Recomiendo utilizar la vision en el navegador de 110% (CTRL+SCROLLUP) ya que 
-la vision no es responsive.
-
--Recomiendo abrirlo desde visual estudio code. En la opcion GO LIVE. Ya que desde el index
-por alguna razon que desconozco no cargan las imagenes.
-
-Muchas gracias.
