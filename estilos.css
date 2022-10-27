@@ -34,13 +34,29 @@ html{
     height: 600px;
 }
 
+
+img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(0.9);
+}
+ 
+
+
+
+
+
+
+
 .im-centered{margin: auto;
             margin-top: 30px; 
             margin-bottom: 30px;
             max-width: 300px;}
-
-
-
 
 .footer{
     padding: 40px 0;
@@ -184,6 +200,7 @@ html{
     
  /*INICIO financiamiento.HTML */ 
  
+
 /*FIN/
 
  /*INICIO SEDE.HTML */ 
