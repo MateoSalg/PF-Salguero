@@ -34,19 +34,13 @@ html{
     height: 600px;
 }
 
-.jumbotron{
+.im-centered{margin: auto;
+            margin-top: 30px; 
+            margin-bottom: 30px;
+            max-width: 300px;}
 
-    background-image: url(/img/torino1.jpg);
-    background-size: cover;
-    margin: 50px;
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
 
-}
 
-.jumbotron h2 p{
-    text-align: center;
-}
 
 .footer{
     padding: 40px 0;
@@ -115,8 +109,6 @@ html{
     font-size: 13px;
     color: black;
 }
-
-
 
 
 /*FIN DEL INDEX.HTML/
@@ -248,12 +240,20 @@ html{
 }
 
 
-.mapa{
-    height: 450px;
-    margin-bottom: 40px;
-    margin-right: 400px;
-    margin-left: 600px;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
  /*FIN/
