@@ -1,113 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--- ??? --> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- se adapta a contenidos --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--- logos --> 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="estilos.css"> <!--- link a css --> 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> <!--- imagen del mundo --> 
-    
+    <!-- LINK BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="fuentes.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <title>RULOCARS</title>
+    <!-- LINK fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <title>Rulocars</title>
 </head>
 
-
 <body>
-    <header> 
-        <a href="index.html"><img class="logo" src="img/Captura.PNG" alt="RULOCARS"> </a>
-        <nav class="barra">  
-            <ul> 
+    <!-- NAVBAR INICIA -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">RULOCARS</a>
 
-                <li><a href="quienesomos.html" target="_blank"> Quienes somos </a></li> 
-        
-                <li> <a href="autos.html" target="_blank">Autos</a></li>
-    
-                <li><a href="financiamiento.html" target="_blank">Financiamiento</a></li>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <li><a href="sede.html" target="_blank">Sede</a></li>
-    
-                <li> <a href="https://www.google.com.ar/maps/place/RULO+CARS/@-32.8286372,-60.7421741,14z/data=!4m9!1m2!2m1!1srulocars!3m5!1s0x95b651ab4cacbb99:0x133cdd9a39981ed7!8m2!3d-32.8204065!4d-60.729409!15sCghydWxvY2Fyc5IBC2F1dG9fYnJva2Vy4AEA" target="_blank"><img a src="img/bandera.PNG" alt="🇦🇷"> </a> </li>
-
-                <li> <a href="https://www.instagram.com/rulocars_/" class="insta" target="_blank"> <i class="fa-brands fa-instagram"> </i> </a> </li>
-
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="quienesomos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="autos.html">Autos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="financiamiento.html">Financiamiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sede.html">Sede</a>
+                </li>
+                <li class="bandera">
+                    <a href="https://www.google.com.ar/maps/place/RULO+CARS/@-32.8286372,-60.7421741,14z/data=!4m9!1m2!2m1!1srulocars!3m5!1s0x95b651ab4cacbb99:0x133cdd9a39981ed7!8m2!3d-32.8204065!4d-60.729409!15sCghydWxvY2Fyc5IBC2F1dG9fYnJva2Vy4AEA"
+                        target="_blank"><img a src="img/bandera.PNG" alt="🇦🇷" />
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </header> 
+        </div>
+    </nav>
+    <!-- NAVBAR FIN -->
 
-    <div class="fond000"></div>
-
-
-    <div class="frase">
-        <p>
-            Comprendemos tu necesidad, te ayudamos a conseguir el financiamiento que deseas.
-        </p>
-    </div>
-
-    <div class="frase">
-        <p>
-            Elegi tu plan. Estamos listos y tenemos una opcion de financiamiento.
-        </p>
-    </div>
-    
-    
+    <!-- IMAGEN INICIO -->
+    <img class="img-fluid" src="/img/fondo2.jpg" alt="fondoprincipal">
+    <!-- IMAGEN FIN -->
 
 
-    <section class="finan">
-    <div>
-        <img src="/img/financiacion.PNG" alt="" class="a2">
-    </div>
-    </section>
-
-    <section class="registrar">
-        <h6>Formulario</h6>
-        <input class="control" type="text" name="nombres" id="nombres" placeholder="Ingresa tu nombre">
-        <input class="control" type="text" name="nombres" id="apellidos" placeholder="Ingresa tu apellido">
-        <input class="control" type="email" name="nombres" id="correo" placeholder="Ingresa tu correo">
-        <input class="botons" type="sumbit" value="Enviar">
-     </section> 
-
-     <br>
     
     <footer>
-        <div class="section">
-            <div>
-                <h5>Institucional</h5>
-                <a href="quienesomos.html">Quienes somos</a>
+        <section class="footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/rulocars_/?hl=es" target="_blank"> <i class="fab fa-instagram"></i></a>
             </div>
-            <div>
-                <h5>Ventas</h5>
-                <a href="autos.html">Vehiculos</a>
-            </div>
-            <div>
-                <h5>Financiacion</h5>
-                <a href="financiamiento.html">Financiacion</a>
-            </div>
-            <div>
-                <h5>Novedades</h5>
-                <a href="#">Novedades</a>
-            </div>
-        </div>
 
-        <p>SIGUENOS!</p>
-            <a href="https://www.instagram.com/rulocars_/" class="insta"> <i class="fa-brands fa-instagram"> </i> </a> 
-        <br>
-        <br>
-            <p>Copyright ©2022. Designed By Mateo Salguero. </p>
+            <ul class="list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="quienesomos.html">Quienes somos</a>
+                </li>
+                <li>
+                    <a href="autos.html">Autos</a>
+                </li>
+                <li>
+                    <a href="financiamiento.html">Financiamiento</a>
+                </li>
+                <li>
+                    <a href="sede.html">Sede</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Todos los derechos reservados.
+            </p>
+
     </footer>
 
-    <a href="#" class="subir">
-        <i class="fa-sharp fa-solid fa-angle-up"></i>
-    </a>
-    <a href="index.html" class="home">
-        <i class="fa-solid fa-house-user"></i>
-    </a>
-    
+    <!-- LINK BOOSTRAP LIBRERIAS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- LINK BOOSTRAP LIBRERIAS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-</html>
