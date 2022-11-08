@@ -126,7 +126,7 @@ img:hover{
 /*INICIO QUIENESOMOS.HTML */
 
 .caja_imagen{
-    background-image: url(/img/quienesomos.jpg);
+    background-image: url(./img/quienesomos.jpg);
     background: cover;
     background-repeat: round;
 }
