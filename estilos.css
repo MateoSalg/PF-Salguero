@@ -1,150 +1,147 @@
 /*INDEX.HTML */
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: auto;
+html {
+  scroll-behavior: auto;
 }
 
-.navbar{
-    background-color: black;
-    margin: auto;
+.navbar {
+  background-color: black;
+  margin: auto;
 }
 
-.navbar-brand{
-    font-size: 35px;
+.navbar-brand {
+  font-size: 35px;
 }
 
-.nav-item{
-    font-size: 20px;
+.nav-item {
+  font-size: 20px;
 }
 
-.bandera{
-    margin: auto;
-    padding-left: 10px;
+.bandera {
+  margin: auto;
+  padding-left: 10px;
 }
 
-.img-fluid{
-    width:100%; 
-    height: 600px;
+.img-fluid {
+  width: 100%;
+  height: 600px;
 }
 
-
-img{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
+img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-img:hover{
-    transform: scale(0.9);
+img:hover {
+  transform: scale(0.9);
 }
- 
 
-.im-centered{margin: auto;
-            margin-top: 30px; 
-            margin-bottom: 30px;
-            max-width: 300px;}
+.im-centered {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 300px;
+}
 
-.footer{
-    padding: 40px 0;
-    background-color: rgb(65, 64, 64);
+.footer {
+  padding: 40px 0;
+  background-color: rgb(65, 64, 64);
 }
 
 .footer .redes {
-    text-align: center;
-    padding-bottom: 25px;
-    color: black;
+  text-align: center;
+  padding-bottom: 25px;
+  color: black;
 }
 
-.footer .redes a{
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 9px;
-    opacity: 0.75;
+.footer .redes a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 9px;
+  opacity: 0.75;
 }
 
-.footer .redes a:hover{
-    opacity: 0.9;
-
+.footer .redes a:hover {
+  opacity: 0.9;
 }
 
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-.footer ul a{
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-.footer ul li a{
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
 }
 
-.footer ul li a:hover{
-    opacity: 1;
+.footer ul li a:hover {
+  opacity: 1;
 }
 
-.footer .copyright{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: black;
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: black;
 }
-
 
 /*FIN DEL INDEX.HTML/
 
 /*INICIO QUIENESOMOS.HTML */
-
-.caja_imagen{
-    background-image: url(./img/quienesomos.jpg);
-    background: cover;
-    background-repeat: round;
+.caja_imagen {
+  background-image: url(./img/quienesomos.jpg);
+  background: cover;
+  background-repeat: round;
 }
 
- .texto_encima{  
-    padding-right:15%;
-    padding-left:15%;     
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    text-align: center;
- }
- .texto_parrafo {         
-    padding-right:15%;
-    padding-left:15%; 
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    text-align: justify;
- }
+.texto_encima {
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.texto_parrafo {
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
 
 /*quienessomos.HTML/
 
@@ -152,83 +149,71 @@ img:hover{
 
 
 
- /*INICIO AUTOS.HTML */   
-
-.tituloU{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
+ /*INICIO AUTOS.HTML */
+.tituloU {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-
-.img-fluid2{
-    width:100%; 
-    height: 600px;
-    background-position: center;
-    
+.img-fluid2 {
+  width: 100%;
+  height: 600px;
+  background-position: center;
 }
 
-.container{
-    padding: 10px;
-    margin-bottom: auto;
+.container {
+  padding: 10px;
+  margin-bottom: auto;
 }
 
 .carousel-inner img {
-    width: 100%;
-    max-height: 460px;
-    padding: 1px;
+  width: 100%;
+  max-height: 460px;
+  padding: 1px;
 }
 
-.carousel-inner{
- height: 420px;
- width: 100%;
+.carousel-inner {
+  height: 420px;
+  width: 100%;
 }
-
-
- /*FIN/
-
-
-
-
-    
- /*INICIO financiamiento.HTML */ 
- 
 
 /*FIN/
 
- /*INICIO SEDE.HTML */ 
 
 
-.sed3{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    letter-spacing: 0.5px;
-    float: none;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin-bottom: 5px;
-    margin-right: 300px;
-    margin-left: 570px;
-    width: 40%;
+
+
+/*INICIO financiamiento.HTML */
+/*FIN/
+
+ /*INICIO SEDE.HTML */
+.sed3 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  float: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-right: 300px;
+  margin-left: 570px;
+  width: 40%;
 }
 
-
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
- /*FIN/
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}/*# sourceMappingURL=estilos.css.map */
