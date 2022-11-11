@@ -178,6 +178,13 @@ img:hover {
   position: relative;
   height: 0;
 }
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 /* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
 /* Lo utilize reiteradas veces porque es muy util*//*# sourceMappingURL=estilos.css.map */
