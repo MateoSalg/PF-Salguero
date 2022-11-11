@@ -1,236 +1,204 @@
-/*INDEX.HTML */
+$color_1: black;
+$color_2: inherit;
+$color_3: rgb(255, 255, 255);
+$color_4: rgb(0, 0, 0);
+$font-family_1: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$background-color_1: rgb(0, 0, 0);
+$background-color_2: rgb(65, 64, 64);
+$background-color_3: rgb(255, 255, 255);
+$FontS: 35px;
+$FontSz: 0;
+$FontSzz: 15;
+$Fullwidht: 100%;
+$aa: oscuro;
 
-$colorosc: rgb(0, 0, 0);
-$coloclar: rgb(255, 255, 255);
-$colomed: rgb(65, 64, 64);
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: auto;
+html {
+	scroll-behavior: auto;
+}
+.navbar {
+	background-color: $background-color_1;
+	margin: auto;
+}
+.navbar-brand {
+	font-size: $FontS - $FontSz;
+}
+.nav-item {
+	font-size: $FontS - $FontSzz;
 }
 
-.navbar{
-    background-color: $colorosc;
-    margin: auto;
+@mixin bandera {
+	margin: auto;
+	padding-left: 20px;
 }
-
-.navbar-brand{
-    font-size: 35px;
-}
-
-.nav-item{
-    font-size: 20px;
-}
-
 .bandera{
-    margin: auto;
-    padding-left: 10px;
-}
-
-.img-fluid{
-    width:100%; 
-    height: 600px;
+	@include bandera()
 }
 
 
-img{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    object-fit: cover;
+.img-fluid {
+	width: $Fullwidht;
+	height: 600px;
+}
+img {
+	width: $Fullwidht;
+	height: 100%;
+	transition: 0.5s;
+	-o-object-fit: cover;
+	object-fit: cover;
+	&:hover {
+		transform: scale(0.9);
+	}
+}
+.im-centered {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 300px;
+}
+.footer {
+	padding: 40px 0;
+	background-color: $background-color_2;
+	.redes {
+		text-align: center;
+		padding-bottom: 25px;
+		color: $color_1;
+		a {
+			font-size: 24px;
+			color: $color_2;
+
+			@if $aa == oscuro{
+				border: 1px solid rgb(0, 0, 0);
+			}
+
+			@else if $aa == claro{
+				border: white;
+			}
+			
+			width: 40px;
+			height: 40px;
+			line-height: 38px;
+			display: inline-block;
+			text-align: center;
+			border-radius: 50%;
+			margin: 0 9px;
+			opacity: 0.75;
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	ul {
+		margin-top: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 18px;
+		line-height: 1.6;
+		margin-bottom: 0;
+		text-align: center;
+		a {
+			color: $color_2;
+			text-decoration: none;
+			opacity: 0.8;
+		}
+		li {
+			a {
+				color: $color_2;
+				text-decoration: none;
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			display: inline-block;
+			padding: 0 15px;
+		}
+	}
+	.copyright {
+		margin-top: 15px;
+		text-align: center;
+		font-size: 13px;
+		color: $color_1;
+	}
+}
+.caja_imagen {
+	background-image: url(./img/quienesomos.jpg);
+	background: cover;
+	background-repeat: round;
+}
+.texto_encima {
+	padding-right: 15%;
+	padding-left: 15%;
+	font-size: 30px;
+	color: $color_3;
+	text-align: center;
+}
+.texto_parrafo {
+	padding-right: 15%;
+	padding-left: 15%;
+	font-size: 20px;
+	color: $color_3;
+	text-align: justify;
+}
+.tituloU {
+	background-color: $background-color_1;
+	color: $color_3;
+	text-align: center;
+	padding: 20px;
+}
+.img-fluid2 {
+	width: $Fullwidht;
+	height: 600px;
+	background-position: center;
 }
 
-img:hover{
-    transform: scale(0.9);
+@mixin padding0 {
+	padding: 10px;
+	margin-bottom: auto;
 }
- 
-
-.im-centered{margin: auto;
-            margin-top: 30px; 
-            margin-bottom: 30px;
-            max-width: 300px;}
-
-.footer{
-    padding: 40px 0;
-    background-color: $colomed;
-}
-
-.footer .redes {
-    text-align: center;
-    padding-bottom: 25px;
-    color: black;
-}
-
-.footer .redes a{
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid $colorosc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 9px;
-    opacity: 0.75;
-}
-
-.footer .redes a:hover{
-    opacity: 0.9;
-
-}
-
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.footer ul a{
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer ul li a{
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.footer ul li a:hover{
-    opacity: 1;
-}
-
-.footer .copyright{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: black;
-}
-
-
-/*FIN DEL INDEX.HTML/
-
-/*INICIO QUIENESOMOS.HTML */
-
-.caja_imagen{
-    background-image: url(./img/quienesomos.jpg);
-    background: cover;
-    background-repeat: round;
-}
-
- .texto_encima{  
-    padding-right:15%;
-    padding-left:15%;     
-    font-size: 30px;
-    color: $coloclar;
-    text-align: center;
- }
- .texto_parrafo {         
-    padding-right:15%;
-    padding-left:15%; 
-    font-size: 20px;
-    color: $coloclar;
-    text-align: justify;
- }
-
-/*quienessomos.HTML/
-
-
-
-
-
- /*INICIO AUTOS.HTML */   
-
-.tituloU{
-    background-color: $colorosc;
-    color: $coloclar;
-    text-align: center;
-    padding: 20px;
-}
-
-
-.img-fluid2{
-    width:100%; 
-    height: 600px;
-    background-position: center;
-    
-}
-
 .container{
-    padding: 10px;
-    margin-bottom: auto;
+	@include padding0()
 }
 
-.carousel-inner img {
-    width: 100%;
-    max-height: 460px;
-    padding: 1px;
+.carousel-inner {
+	img {
+		width: $Fullwidht;
+		max-height: 460px;
+		padding: 1px;
+	}
+	height: 420px;
+	width: $Fullwidht;
+}
+.sed3 {
+	font-size: 20px;
+	font-family: $font-family_1;
+	color: $color_4;
+	letter-spacing: 0.5px;
+	float: none;
+	background-color: $background-color_3;
+	padding: 20px;
+	margin-bottom: 5px;
+	margin-right: 300px;
+	margin-left: 570px;
+	width: 40%;
 }
 
-.carousel-inner{
- height: 420px;
- width: 100%;
+/* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
+
+@mixin mapa {                       
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
 }
-
-
- /*FIN/
-
-
-
-
-    
- /*INICIO financiamiento.HTML */ 
- 
-
-/*FIN/
-
- /*INICIO SEDE.HTML */ 
-
-
-.sed3{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: $colorosc;
-    letter-spacing: 0.5px;
-    float: none;
-    background-color: $coloclar;
-    padding: 20px;
-    margin-bottom: 5px;
-    margin-right: 300px;
-    margin-left: 570px;
-    width: 40%;
-}
-
-
 .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-
+	@include mapa()
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
+/* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
+/* Lo utilize reiteradas veces porque es muy util*/

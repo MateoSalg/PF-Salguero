@@ -1,4 +1,3 @@
-/*INDEX.HTML */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +23,7 @@ html {
 
 .bandera {
   margin: auto;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .img-fluid {
@@ -37,9 +36,8 @@ img {
   height: 100%;
   transition: 0.5s;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 img:hover {
   transform: scale(0.9);
 }
@@ -55,13 +53,11 @@ img:hover {
   padding: 40px 0;
   background-color: rgb(65, 64, 64);
 }
-
 .footer .redes {
   text-align: center;
   padding-bottom: 25px;
   color: black;
 }
-
 .footer .redes a {
   font-size: 24px;
   color: inherit;
@@ -75,11 +71,9 @@ img:hover {
   margin: 0 9px;
   opacity: 0.75;
 }
-
 .footer .redes a:hover {
   opacity: 0.9;
 }
-
 .footer ul {
   margin-top: 0;
   padding: 0;
@@ -89,28 +83,23 @@ img:hover {
   margin-bottom: 0;
   text-align: center;
 }
-
 .footer ul a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
 }
-
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
 .footer ul li a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
 }
-
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
 .footer ul li a:hover {
   opacity: 1;
 }
-
 .footer .copyright {
   margin-top: 15px;
   text-align: center;
@@ -118,9 +107,6 @@ img:hover {
   color: black;
 }
 
-/*FIN DEL INDEX.HTML/
-
-/*INICIO QUIENESOMOS.HTML */
 .caja_imagen {
   background-image: url(./img/quienesomos.jpg);
   background: cover;
@@ -143,13 +129,6 @@ img:hover {
   text-align: justify;
 }
 
-/*quienessomos.HTML/
-
-
-
-
-
- /*INICIO AUTOS.HTML */
 .tituloU {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -168,27 +147,16 @@ img:hover {
   margin-bottom: auto;
 }
 
+.carousel-inner {
+  height: 420px;
+  width: 100%;
+}
 .carousel-inner img {
   width: 100%;
   max-height: 460px;
   padding: 1px;
 }
 
-.carousel-inner {
-  height: 420px;
-  width: 100%;
-}
-
-/*FIN/
-
-
-
-
-
-/*INICIO financiamiento.HTML */
-/*FIN/
-
- /*INICIO SEDE.HTML */
 .sed3 {
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -203,6 +171,7 @@ img:hover {
   width: 40%;
 }
 
+/* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -210,10 +179,5 @@ img:hover {
   height: 0;
 }
 
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}/*# sourceMappingURL=estilos.css.map */
+/* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
+/* Lo utilize reiteradas veces porque es muy util*//*# sourceMappingURL=estilos.css.map */
