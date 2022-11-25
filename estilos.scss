@@ -18,6 +18,7 @@ $aa: oscuro;
 	box-sizing: border-box;
 }
 
+
 html {
 	scroll-behavior: auto;
 }
@@ -61,6 +62,16 @@ img {
 	margin-bottom: 30px;
 	max-width: 300px;
 }
+
+.img-fluid55{
+	width: $Fullwidht;
+
+}
+
+.centro{
+	margin: auto;
+}
+
 .footer {
 	padding: 40px 0;
 	background-color: $background-color_2;
@@ -210,3 +221,10 @@ img {
 /* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
 /* Lo utilize reiteradas veces porque es muy util*/
 
+@mixin hola {
+	background-color: rgb(255, 255, 255);
+}
+
+.container{
+	@include hola()
+}

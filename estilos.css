@@ -49,6 +49,14 @@ img:hover {
   max-width: 300px;
 }
 
+.img-fluid55 {
+  width: 100%;
+}
+
+.centro {
+  margin: auto;
+}
+
 .footer {
   padding: 40px 0;
   background-color: rgb(65, 64, 64);
@@ -187,4 +195,7 @@ img:hover {
 }
 
 /* Este mixing lo que hace es tomar a mapa, y con solo poner el nombre de la clase lo rellena automaticamente.*/
-/* Lo utilize reiteradas veces porque es muy util*//*# sourceMappingURL=estilos.css.map */
+/* Lo utilize reiteradas veces porque es muy util*/
+.container {
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=estilos.css.map */
